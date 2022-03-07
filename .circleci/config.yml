@@ -17,6 +17,7 @@ jobs:
           name: Install frontend
           command: |
             npm run frontend:install
+      - run:
           name: Install backend
           command: |
             npm run backend:install
@@ -24,6 +25,7 @@ jobs:
           name: build frontend
           command: |
             npm run frontend:build
+      - run:
           name: build backend
           command: |
             npm run backend:build
